@@ -1,0 +1,12 @@
+{
+  "name": "fullstack-integrador",
+  "version": "1.0.0",
+  "description": "Projeto Fullstack do Projeto Integrador 3",
+  "main": "index.js",
+  "scripts": {
+    "start": "json-server --watch db.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

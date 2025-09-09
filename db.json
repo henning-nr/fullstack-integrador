@@ -41,6 +41,13 @@
       "sexo": "m",
       "matricula": "0909",
       "id": 24
+    },
+    {
+      "nome": "as",
+      "idade": "sd",
+      "sexo": "sd",
+      "matricula": "sd",
+      "id": 25
     }
   ],
   "disciplinas": [
