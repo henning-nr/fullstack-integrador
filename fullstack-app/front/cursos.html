@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEU FRONT</title>
+</head>
+
+<body>
+    MEU CRUD DE CURSOS
+    <br>
+    <a href="/fullstack-app/front/">Voltar</a>
+
+    <form id="formAluno">
+        <input type="hidden" id="id" name="id">
+        <input type="text" id="nome" name="nome" placeholder="Nome">
+        <input type="text" id="turno" name="turno" placeholder="Idade">
+        <input type="text" id="professor" name="professor" placeholder="Sexo">
+        <input type="text" id="codigo" name="codigo" placeholder="Matricula">
+    </form>
+    <button onclick="salvar()">Enviar</button>
+    <button onclick="atualizar()">Atualizar</button>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Turno</th>
+                <th>Professor</th>
+                <th>Código</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <!-- Dados são injetado no HTML aqui -->
+        </tbody>
+    </table>
+    
+
+    <script src="js/listar.js"></script>
+    <script src="js/salvar.js"></script>
+    <script src="js/editar.js"></script>
+    <script src="js/excluir.js"></script>
+    <script>
+        url = "https://curly-giggle-76q669w9q6j2r5w7-3000.app.github.dev/cursos/"
+        listar()
+    </script>
+</body>
+
+</html>

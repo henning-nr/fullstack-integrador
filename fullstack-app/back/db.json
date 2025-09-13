@@ -28,5 +28,14 @@
       "matricula": "123456888",
       "id": 5
     }
+  ],
+  "cursos": [
+    {
+      "nome": "ADS",
+      "turno": "noite",
+      "professor": "Henning",
+      "codigo": "123aaa",
+      "id": 1
+    }
   ]
 }
