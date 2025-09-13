@@ -1,26 +1,31 @@
 function listar() {
     fetch(url)
         .then((res) => { return res.json() })
-        .then((alunos) => {
-            console.log(alunos)
+        .then((dados) => {
+            console.log(dados)
 
-            alunosList = ""
-            for (let aluno of alunos) {
-                alunosList += `
+            dadosList = ""
+
+            for (let dado of dados) {
+                id = dado.id
+                delete dado.id
+                let values = ""
+                for (let prop in dado) {
+                    values += `<td>${dado[prop]}</td>`
+                }
+                console.log('dado montado', values)
+                dadosList += `
                               <tr>
-                                 <td>${aluno.nome}</td>
-                                 <td>${aluno.idade}</td>
-                                 <td>${aluno.sexo}</td>
-                                 <td>${aluno.matricula}</td>
+                                 ${values}
                                  <td>
-                                   <button onclick="editar(${aluno.id})">Editar</button>
-                                   <button onclick="excluir(${aluno.id})">Excluir</button>
+                                   <button onclick="editar(${id})">Editar</button>
+                                   <button onclick="excluir(${id})">Excluir</button>
                                  </td>
                               </tr>  
                               `
             }
 
-            document.querySelector("tbody").innerHTML = alunosList
+            document.querySelector("tbody").innerHTML = dadosList
         })
 }
 
