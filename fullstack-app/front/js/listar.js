@@ -13,8 +13,8 @@ function listar() {
                                  <td>${aluno.sexo}</td>
                                  <td>${aluno.matricula}</td>
                                  <td>
-                                   <button onclick="editar()">Editar</button>
-                                   <button onclick="excluir()">Excluir</button>
+                                   <button onclick="editar(${aluno.id})">Editar</button>
+                                   <button onclick="excluir(${aluno.id})">Excluir</button>
                                  </td>
                               </tr>  
                               `
