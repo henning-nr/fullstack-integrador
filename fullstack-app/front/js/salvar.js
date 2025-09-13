@@ -6,6 +6,8 @@ function salvar() {
     const obj = Object.fromEntries(dados.entries());
     console.log(obj)
 
+    delete obj.id
+
     fetch(url, {
         method: "POST",
         headers: {

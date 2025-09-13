@@ -1,4 +1,4 @@
-function editar(id) {
+function editar(id) { // aqui recebe o id para pegar o dado do recurso
     console.log("editando", id)
 
     fetch(url + id, {
@@ -9,7 +9,7 @@ function editar(id) {
             console.log(dados)
 
             for (let prop in dados) {
-                document.getElementById(prop).value = dados[prop]
+                document.getElementById(prop).value = dados[prop] 
             }
 
         })
