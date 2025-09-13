@@ -9,3 +9,6 @@ Projeto Fullstack do Projeto Integrador 3
 3 - INSERIR OS ALUNOS NO FRONT
 4 - EDITAR OS ALUNOS NO FRONT
 5 - DELETAR OS ALUNOS NO FRONT
+
+## PARA RODAR A APLICAÇÃO
+Para rodar a aplicaçaõ digite `npm start` no terminal e dê enter

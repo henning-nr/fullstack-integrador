@@ -1,62 +1,28 @@
 {
   "alunos": [
     {
-      "nome": "Miguel",
-      "idade": "23",
-      "sexo": "Masculino",
-      "matricula": "123445688",
-      "id": 18
-    },
-    {
-      "nome": "re",
-      "idade": "re",
-      "sexo": "re",
-      "matricula": "re",
-      "id": 19
-    },
-    {
-      "nome": "Aline lima maria",
-      "idade": "40",
-      "sexo": "feminino",
-      "matricula": "45645",
-      "id": 20
-    },
-    {
-      "nome": "joane",
-      "idade": "15",
-      "sexo": "fem",
-      "matricula": "20",
-      "id": 21
-    },
-    {
-      "nome": "joao",
-      "idade": "23",
-      "sexo": "masc",
-      "matricula": "2323",
-      "id": 22
-    },
-    {
       "nome": "samuel",
       "idade": "22",
       "sexo": "m",
       "matricula": "0909",
-      "id": 24
+      "id": 28
     },
     {
-      "nome": "as",
-      "idade": "sd",
-      "sexo": "sd",
-      "matricula": "sd",
-      "id": 25
+      "nome": "",
+      "idade": "",
+      "sexo": "",
+      "matricula": "",
+      "id": 29
+    },
+    {
+      "nome": "Ctchulhuphant",
+      "idade": "1000",
+      "sexo": "masc",
+      "matricula": "666",
+      "id": 30
     }
   ],
   "disciplinas": [
-    {
-      "nome": "Desenvolvimento Fullstack",
-      "curso": "ADS e cc",
-      "turno": "Noite",
-      "id": 1
-    },
     {
       "nome": "Cloud Computin",
       "curso": "ADS e cc",

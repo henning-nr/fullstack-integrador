@@ -1,0 +1,25 @@
+{
+  "alunos": [
+    {
+      "nome": "Desenvolvimento Fullstack",
+      "idade": "45",
+      "sexo": "m",
+      "matricula": "123456",
+      "id": 1
+    },
+    {
+      "nome": "pedrin",
+      "idade": "89",
+      "sexo": "f",
+      "matricula": "213313",
+      "id": 2
+    },
+    {
+      "nome": "Henning",
+      "idade": "45",
+      "sexo": "m",
+      "matricula": "3456",
+      "id": 3
+    }
+  ]
+}

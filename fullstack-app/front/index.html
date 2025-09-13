@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MEU FRONT</title>
+</head>
+
+<body>
+    MINHA APLICAÇÃO FRONTEND
+
+    <form id="formAluno">
+        <input type="text" name="nome" placeholder="Nome">
+        <input type="text" name="idade" placeholder="Idade">
+        <input type="text" name="sexo" placeholder="Sexo">
+        <input type="text" name="matricula" placeholder="Matricula">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Idade</th>
+                <th>Sexo</th>
+                <th>Matricula</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    
+    <script>
+        url = "https://curly-giggle-76q669w9q6j2r5w7-3000.app.github.dev/alunos"
+
+        
+
+        document.getElementById("formAluno").addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            formAluno = document.getElementById("formAluno")
+
+            let dados = new FormData(formAluno)
+
+            // for (let [chave, valor] of dados.entries()) {
+            //     console.log(chave, valor);
+            // }
+
+            const obj = Object.fromEntries(dados.entries());
+
+            console.log(obj)
+
+            fetch(url, {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json" 
+                },
+                body: JSON.stringify(obj) // aqui vai direto o FormData
+            })
+            .then((res)=>{return res.json()})
+            .then((da)=>{console.log(da)})
+
+            console.log("salvando", resposta.json())
+        })
+
+        fetch(url)
+            .then((res) => { return res.json() })
+            .then((alunos) => {
+                console.log(alunos)
+
+                alunosList = ""
+                for (let aluno of alunos) {
+                    alunosList += `
+                              <tr>
+                              <td>${aluno.nome}</td>
+                              <td>${aluno.idade}</td>
+                              <td>${aluno.sexo}</td>
+                              <td>${aluno.matricula}</td>
+                              </tr>  
+                              `
+                }
+
+                document.querySelector("tbody").innerHTML = alunosList
+            })
+    </script>
+</body>
+
+</html>
