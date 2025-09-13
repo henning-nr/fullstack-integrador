@@ -27,14 +27,14 @@
                 <th>Matricula</th>
             </tr>
         </thead>
-        <tbody>
 
+        <tbody>
+            <!-- Dados são injetado no HTML aqui -->
         </tbody>
     </table>
     
     <script>
         url = "https://curly-giggle-76q669w9q6j2r5w7-3000.app.github.dev/alunos"
-
         
 
         document.getElementById("formAluno").addEventListener("submit", async (e) => {
@@ -44,12 +44,7 @@
 
             let dados = new FormData(formAluno)
 
-            // for (let [chave, valor] of dados.entries()) {
-            //     console.log(chave, valor);
-            // }
-
             const obj = Object.fromEntries(dados.entries());
-
             console.log(obj)
 
             fetch(url, {
@@ -74,10 +69,10 @@
                 for (let aluno of alunos) {
                     alunosList += `
                               <tr>
-                              <td>${aluno.nome}</td>
-                              <td>${aluno.idade}</td>
-                              <td>${aluno.sexo}</td>
-                              <td>${aluno.matricula}</td>
+                                 <td>${aluno.nome}</td>
+                                 <td>${aluno.idade}</td>
+                                 <td>${aluno.sexo}</td>
+                                 <td>${aluno.matricula}</td>
                               </tr>  
                               `
                 }
