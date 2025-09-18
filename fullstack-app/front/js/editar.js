@@ -15,10 +15,10 @@ function editar(id) { // aqui recebe o id para pegar o dado do recurso
         })
 }
 
-function atualizar() {
-    formAluno = document.getElementById("formAluno")
+function atualizar(idForm) {
+    form = document.getElementById(idForm)
 
-    let dados = new FormData(formAluno)
+    let dados = new FormData(form)
 
     const obj = Object.fromEntries(dados.entries());
     console.log(obj)

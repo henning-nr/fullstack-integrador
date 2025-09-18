@@ -12,15 +12,15 @@
     <br>
     <a href="/fullstack-app/front/">Voltar</a>
 
-    <form id="formAluno">
+    <form id="formCurso">
         <input type="hidden" id="id" name="id">
         <input type="text" id="nome" name="nome" placeholder="Nome">
-        <input type="text" id="turno" name="turno" placeholder="Idade">
-        <input type="text" id="professor" name="professor" placeholder="Sexo">
-        <input type="text" id="codigo" name="codigo" placeholder="Matricula">
+        <input type="text" id="turno" name="turno" placeholder="Turno">
+        <input type="text" id="professor" name="professor" placeholder="Professor">
+        <input type="text" id="codigo" name="codigo" placeholder="Código">
     </form>
-    <button onclick="salvar()">Enviar</button>
-    <button onclick="atualizar()">Atualizar</button>
+    <button onclick="salvar('formCurso')">Enviar</button>
+    <button onclick="atualizar('formCurso')">Atualizar</button>
 
     <table>
         <thead>

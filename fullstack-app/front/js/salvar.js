@@ -1,7 +1,7 @@
-function salvar() {
-    formAluno = document.getElementById("formAluno")
+function salvar(idForm) {
+    form = document.getElementById(idForm)
 
-    let dados = new FormData(formAluno)
+    let dados = new FormData(form)
 
     const obj = Object.fromEntries(dados.entries());
     console.log(obj)

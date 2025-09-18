@@ -27,6 +27,13 @@
       "sexo": "masculino",
       "matricula": "123456888",
       "id": 5
+    },
+    {
+      "nome": "Henning",
+      "idade": "45",
+      "sexo": "m",
+      "matricula": "3456",
+      "id": 6
     }
   ],
   "cursos": [
@@ -36,6 +43,13 @@
       "professor": "Henning",
       "codigo": "123aaa",
       "id": 1
+    },
+    {
+      "nome": "Direito novo",
+      "turno": "Noite",
+      "professor": "JoSE",
+      "codigo": "456123",
+      "id": 2
     }
   ]
 }
